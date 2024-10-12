@@ -11,3 +11,15 @@ pub struct BuyPizzaRequest {
 pub struct UpdatePizzaRequest {
     pub id: String,
 }
+
+#[derive(Validate, Serialize, Deserialize)]
+pub struct Pizza {
+    pub id: String,
+    pub name: String,
+}
+
+impl Pizza {
+    pub fn new(id: String, name: String) -> Pizza {
+        Pizza { id, name }
+    }
+}
