@@ -12,14 +12,13 @@ pub struct UpdatePizzaRequest {
     pub id: String,
 }
 
-#[derive(Validate, Serialize, Deserialize)]
+#[derive(Validate, Deserialize, Serialize, Debug)]
 pub struct Pizza {
-    pub id: String,
-    pub name: String,
+    pub pizza_name: String,
 }
 
 impl Pizza {
-    pub fn new(id: String, name: String) -> Pizza {
-        Pizza { id, name }
+    pub fn new(pizza_name: String) -> Pizza {
+        Pizza { pizza_name }
     }
 }
