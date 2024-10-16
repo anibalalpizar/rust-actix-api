@@ -1,13 +1,6 @@
 # SurrealDB
+1. Execute the following command to start the SurrealDB server: `surreal start file:pizzashop.db --user root --password root`
 
-1. Execute the following command to start the SurrealDB server:
-```bash
-surreal start file:pizzashop.db --user root --password root
-```
 
 # Run rust api
-2. Execute the following command to start the Rust API:
-
-```bash
-cargo run
-```
+2. Execute the following command to start the Rust API: `cargo run`
